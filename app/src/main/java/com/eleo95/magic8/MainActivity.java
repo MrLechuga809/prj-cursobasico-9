@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private long lastUpdate = 0;
     private float x0, y0, z0;
     private static final int SHAKE_THRESHOLD = 200;
+    private String[] responses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         sManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        responses = getResources().getStringArray(R.array.response_arr);
         if (sManager != null) {
             acclSensor = sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
             sManager.registerListener(this, acclSensor, SensorManager.SENSOR_DELAY_NORMAL);
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 float speed = Math.abs((x+y+z-x0-y0-z0)/periodo) * 1000;
 
                 if(speed > SHAKE_THRESHOLD){
-                    texto.setText(String.valueOf(rand.nextInt(19)));
+                    texto.setText(responses[generateRandom(rand.nextInt(19))]);
                 }
                 x0 = x;
                 y0 = y;
@@ -62,5 +64,28 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        sManager.unregisterListener(this);
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        sManager.registerListener(this, acclSensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    int generateRandom(int lastRandomNumber){
+        Random random = new Random(); //test
+        int randomNumber = random.nextInt(19 - 1) + 1;
+        if(randomNumber == lastRandomNumber)
+        {
+            randomNumber = 0;
+        }
+        return randomNumber;
     }
 }

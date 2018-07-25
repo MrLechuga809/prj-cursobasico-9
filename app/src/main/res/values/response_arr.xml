@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="response_arr">
+        <item>@string/response1</item>
+        <item>@string/response2</item>
+        <item>@string/response3</item>
+        <item>@string/response4</item>
+        <item>@string/response5</item>
+        <item>@string/response6</item>
+        <item>@string/response7</item>
+        <item>@string/response8</item>
+        <item>@string/response9</item>
+        <item>@string/response10</item>
+        <item>@string/response11</item>
+        <item>@string/response12</item>
+        <item>@string/response13</item>
+        <item>@string/response14</item>
+        <item>@string/response15</item>
+        <item>@string/response16</item>
+        <item>@string/response17</item>
+        <item>@string/response18</item>
+        <item>@string/response19</item>
+        <item>@string/response20</item>
+    </string-array>
+</resources>
