@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="response1">Es cierto</string>
+    <string name="response2">Es decididamente así</string>
+    <string name="response3">Sin duda alguna</string>
+    <string name="response4">Sí, definitivamente</string>
+    <string name="response5">Debes confiar en ello</string>
+    <string name="response6">En mi opinión, sí</string>
+    <string name="response7">Al parecer, sí</string>
+    <string name="response8">Buen pronóstico</string>
+    <string name="response9">Sí</string>
+    <string name="response10">Todo apunta a que sí</string>
+    <string name="response11">Respuesta vaga, vuelve a intentarlo</string>
+    <string name="response12">Pregunta en otro momento</string>
+    <string name="response13">Será mejor que no te lo diga ahora</string>
+    <string name="response14">No puedo predecirlo ahora</string>
+    <string name="response15">Concéntrate y vuelve a preguntar</string>
+    <string name="response16">No cuentes con ello</string>
+    <string name="response17">Mi respuesta es no</string>
+    <string name="response18">Mis fuentes me dicen que no</string>
+    <string name="response19">Las perspectivas no son buenas</string>
+    <string name="response20">Muy dudoso</string>
+    <string name="shake">Agítame ahora</string>
+    <string name="start">Click para empezar</string>
+    <string name="question">Escribe tu pregunta aquí</string>
+</resources>

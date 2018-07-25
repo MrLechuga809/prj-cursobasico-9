@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">Magic8</string>
+    <string name="app_name" translatable="false">Magic8</string>
+    <string name="start">Click to start</string>
+    <string name="shake">Shake me now</string>
+    <string name="question">Write your question here.</string>
+    <string name="response1">It is certain</string>
+    <string name="response2">It is decidedly so</string>
+    <string name="response3">Without a doubt</string>
+    <string name="response4">Yes, definitely</string>
+    <string name="response5">You may rely on it</string>
+    <string name="response6">As I see it, yes</string>
+    <string name="response7">Most likely</string>
+    <string name="response8">Outlook good</string>
+    <string name="response9">Yes</string>
+    <string name="response10">Signs point to yes</string>
+
+    <string name="response11">Reply hazy, try again</string>
+    <string name="response12">Ask again later</string>
+    <string name="response13">Better not tell you now</string>
+    <string name="response14">Cannot predict nows</string>
+    <string name="response15">Concentrate and ask again</string>
+
+    <string name="response16">Don\'t count on it</string>
+    <string name="response17">My reply is no</string>
+    <string name="response18">My sources say no</string>
+    <string name="response19">Outlook not so good</string>
+    <string name="response20">Very doubtful</string>
 </resources>
