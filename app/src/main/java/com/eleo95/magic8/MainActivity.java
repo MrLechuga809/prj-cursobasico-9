@@ -15,8 +15,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor acclSensor;
     private long lastUpdate = 0;
     private float x0, y0, z0;
-    private static final int SHAKE_THRESHOLD = 200;
+    private static final int SHAKE_THRESHOLD = 250;
     private String[] responses;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,19 +25,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         sManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+
         responses = getResources().getStringArray(R.array.response_arr);
         if (sManager != null) {
             acclSensor = sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
             sManager.registerListener(this, acclSensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
+
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         Sensor mySensor = event.sensor;
         Random rand = new Random();
-        int lastNum = 0;
         TextView texto = findViewById(R.id.hellotext);
+
         if(mySensor.getType() == Sensor.TYPE_ACCELEROMETER){
             float x = event.values[0];
             float y = event.values[1];
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 if(speed > SHAKE_THRESHOLD){
                     texto.setText(responses[generateRandom(rand.nextInt(19))]);
+
                 }
                 x0 = x;
                 y0 = y;
@@ -84,7 +88,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         int randomNumber = random.nextInt(19 - 1) + 1;
         if(randomNumber == lastRandomNumber)
         {
-            randomNumber = 0;
+            if(randomNumber==0){
+                randomNumber++;
+            }else{
+                randomNumber--;
+            }
+
         }
         return randomNumber;
     }

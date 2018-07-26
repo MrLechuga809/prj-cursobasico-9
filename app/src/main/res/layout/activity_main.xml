@@ -32,7 +32,7 @@
            android:fontFamily="@font/product_sans"
            android:gravity="center"
            android:text="@string/shake"
-           android:textColor="#dbdbdb"
+           android:textColor="#38739f"
            android:textSize="25sp"
 
            />
