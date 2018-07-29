@@ -9,6 +9,7 @@
     <string name="response7">Al parecer, sí</string>
     <string name="response8">Buen pronóstico</string>
     <string name="response9">Sí</string>
+    <string name="no">No</string>
     <string name="response10">Todo apunta a que sí</string>
     <string name="response11">Respuesta vaga, vuelve a intentarlo</string>
     <string name="response12">Pregunta en otro momento</string>
@@ -23,4 +24,6 @@
     <string name="shake">Agítame ahora</string>
     <string name="start">Click para empezar</string>
     <string name="question">Escribe tu pregunta aquí</string>
+    <string name="info">Información</string>
+    <string name="exit">Queires salir?</string>
 </resources>

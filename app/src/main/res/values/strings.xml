@@ -2,6 +2,9 @@
     <string name="app_name" translatable="false">Magic8</string>
     <string name="start">Click to start</string>
     <string name="shake">Shake me now</string>
+    <string name="info">Information</string>
+    <string name="exit">Do you want to exit?</string>
+
     <string name="question">Write your question here.</string>
     <string name="response1">It is certain</string>
     <string name="response2">It is decidedly so</string>
@@ -25,4 +28,5 @@
     <string name="response18">My sources say no</string>
     <string name="response19">Outlook not so good</string>
     <string name="response20">Very doubtful</string>
+    <string name="no">No</string>
 </resources>

@@ -6,6 +6,9 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -17,15 +20,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private float x0, y0, z0;
     private static final int SHAKE_THRESHOLD = 250;
     private String[] responses;
+    private Animation a;
+    private TextView texto;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        texto = findViewById(R.id.hellotext);
+        a = AnimationUtils.loadAnimation(this, R.anim.text_fade);
         sManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-
         responses = getResources().getStringArray(R.array.response_arr);
         if (sManager != null) {
             acclSensor = sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -38,7 +43,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent event) {
         Sensor mySensor = event.sensor;
         Random rand = new Random();
-        TextView texto = findViewById(R.id.hellotext);
+        //TextView texto = findViewById(R.id.hellotext);
+        a.reset();
+
 
         if(mySensor.getType() == Sensor.TYPE_ACCELEROMETER){
             float x = event.values[0];
@@ -55,7 +62,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 float speed = Math.abs((x+y+z-x0-y0-z0)/periodo) * 1000;
 
                 if(speed > SHAKE_THRESHOLD){
+
                     texto.setText(responses[generateRandom(rand.nextInt(19))]);
+                    texto.clearAnimation();
+                    texto.startAnimation(a);
 
                 }
                 x0 = x;
