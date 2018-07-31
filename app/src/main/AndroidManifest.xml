@@ -15,13 +15,18 @@
             android:screenOrientation="portrait"
             android:theme="@style/MagicTheme"
             android:parentActivityName=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
 
         </activity>
         <activity
             android:name=".StartActivity"
-            android:theme="@style/HomeTheme"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+
+
             android:screenOrientation="portrait">
 
             <intent-filter>

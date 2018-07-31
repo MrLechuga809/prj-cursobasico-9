@@ -8,6 +8,37 @@
     android:background="#333333"
     >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_sans"
+        android:text="@string/question"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_sans"
+        android:hint="@string/optionalEditText"
+        android:inputType="text"
+        android:textColor="@color/blanco"
+        android:textColorHint="#555555"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
    <FrameLayout
        android:layout_width="200dp"
        android:layout_height="200dp"
@@ -32,11 +63,22 @@
            android:fontFamily="@font/product_sans"
            android:gravity="center"
            android:text="@string/shake"
-           android:textColor="#38739f"
-           android:textSize="25sp"
-
-           />
+           android:textColor="@color/azulito"
+           android:textSize="25sp" />
 
    </FrameLayout>
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Bttns"
+        android:text="@string/shareit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.413" />
 
 </android.support.constraint.ConstraintLayout>

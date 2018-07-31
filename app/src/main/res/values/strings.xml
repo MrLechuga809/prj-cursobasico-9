@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name" translatable="false">Magic8</string>
     <string name="start">Click to start</string>
-    <string name="shake">Shake me now</string>
+    <string name="shake">Shake me</string>
     <string name="info">Information</string>
+    <string name="exitTitle">Exit</string>
     <string name="exit">Do you want to exit?</string>
+    <string name="textCopied">Text Copied</string>
+    <string name="Me">"Me: "</string>
+    <string name="optionalEditText">Only Yes or No questions</string>
+    <string name="shareit">Share</string>
+    <string name="questionFault">Please write your question before!</string>
+    <string name="no">No</string>
+    <string name="question">Write your question down here.</string>
 
-    <string name="question">Write your question here.</string>
     <string name="response1">It is certain</string>
     <string name="response2">It is decidedly so</string>
     <string name="response3">Without a doubt</string>
@@ -20,7 +27,7 @@
     <string name="response11">Reply hazy, try again</string>
     <string name="response12">Ask again later</string>
     <string name="response13">Better not tell you now</string>
-    <string name="response14">Cannot predict nows</string>
+    <string name="response14">Cannot predict now</string>
     <string name="response15">Concentrate and ask again</string>
 
     <string name="response16">Don\'t count on it</string>
@@ -28,5 +35,5 @@
     <string name="response18">My sources say no</string>
     <string name="response19">Outlook not so good</string>
     <string name="response20">Very doubtful</string>
-    <string name="no">No</string>
+
 </resources>
