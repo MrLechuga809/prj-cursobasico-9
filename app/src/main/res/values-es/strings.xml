@@ -35,5 +35,14 @@
     <string name="response19">Las perspectivas no son buenas</string>
     <string name="response20">Muy dudoso</string>
     <string name="questionFault">Por favor escriba su pregunta antes!</string>
+    <string name="about">Informacion</string>
+    <string name="close">CERRAR</string>
+    <string name="aboutTxt">
+        Magic8 está basada en un juguete usado para echar la fortuna o
+        buscar consejo, diseñado y  manufacturado en los 50s por Mattel.
+        El usuario hace un pregunta a la bola plástica, luego la voltea para revelar
+        la respuesta que aparece el superfice del jueguete.
+        Magic8 ha sido desarrollada by Eddy Leonardo T.
+    </string>
 
 </resources>

@@ -12,6 +12,15 @@
     <string name="questionFault">Please write your question before!</string>
     <string name="no">No</string>
     <string name="question">Write your question down here.</string>
+    <string name="about">About</string>
+    <string name="close">CLOSE</string>
+    <string name="aboutTxt">
+        Magic8 is based   is a toy used for fortune telling
+        or seeking advice, designed and manufactured in the 1950s by Mattel.
+        The user asks a question to the large plastic ball, then turns it over
+        to reveal a written answer which appears on the surface of the toy.
+        Magic8 has been developed by Eddy Leonardo T.
+    </string>
 
     <string name="response1">It is certain</string>
     <string name="response2">It is decidedly so</string>
