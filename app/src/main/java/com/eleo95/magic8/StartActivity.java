@@ -54,6 +54,7 @@ public class StartActivity extends AppCompatActivity {
                 });
                 Dialog diag = infoDialog.show();
                 TextView DialogMssg = diag.findViewById(android.R.id.message);
+                DialogMssg.setTextColor(getResources().getColor(R.color.blanco));
                 DialogMssg.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 infoDialog.create();
             }
