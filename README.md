@@ -4,7 +4,7 @@ Aplicacion android basada en [Magic 8 Ball](https://es.wikipedia.org/wiki/Magic_
 
 ## Información
 
-    Magic8 está basada en un juguete usado para echar la fortuna o buscar consejo, diseñado y manufacturado en los 50s por Mattel.
+Magic8 está basada en un juguete usado para echar la fortuna o buscar consejo, diseñado y manufacturado en los 50s por Mattel.
 
 ## Requisitos
 * Dispositivo Android con KitKat o Superior con sensor accelerómetro.

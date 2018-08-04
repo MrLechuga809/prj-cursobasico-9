@@ -130,10 +130,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
-    //funcion para evitar que random genere el mismo numero pasado
+    //funcion para reducir el numero de random iguales
     int generateRandom(int lastRandomNumber){
         Random random = new Random();
-      // int randomNumber = random.nextInt(19 - 1) + 1;
+      
         int randomNumber = random.nextInt(19);
         if(randomNumber == lastRandomNumber)
         {
