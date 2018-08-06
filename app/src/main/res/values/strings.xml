@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">Magic8</string>
     <string name="start">Click to start</string>
-    <string name="shake">Shake me</string>
+    <string name="shake">Shake me or touch me</string>
     <string name="info">Information</string>
     <string name="exitTitle">Exit</string>
     <string name="exit">Do you want to exit?</string>
-    <string name="textCopied">Text Copied</string>
+    <string name="textCopied">Copied! Now paste this wherever you like</string>
     <string name="Me">"Me: "</string>
     <string name="optionalEditText">Only Yes or No questions</string>
     <string name="shareit">Share</string>

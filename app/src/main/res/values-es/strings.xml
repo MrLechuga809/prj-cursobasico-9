@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="shake">Agítame</string>
+    <string name="shake">Agítame o tócame</string>
     <string name="start">Click para empezar</string>
     <string name="question">Escribe tu pregunta aquí debajo.</string>
     <string name="info">Información</string>
     <string name="exit">Quieres salir?</string>
     <string name="exitTitle">Salir</string>
-    <string name="textCopied">Texto Copiado</string>
+    <string name="textCopied">Copiado! Ahora pega esto donde quieras</string>
     <string name="Me">"Yo: "</string>
     <string name="optionalEditText">Solo preguntas de Si o No</string>
     <string name="shareit">Compartir</string>
