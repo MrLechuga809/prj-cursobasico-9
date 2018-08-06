@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#333333"
+    android:background="@color/grayshade"
     >
 
     <TextView
@@ -48,11 +48,11 @@
        app:layout_constraintRight_toRightOf="parent"
        app:layout_constraintTop_toTopOf="parent">
 
-
-       <ImageView
+       <!--Se utilizó appcompatImgView en vez de ImageView por ser un svg-->
+       <android.support.v7.widget.AppCompatImageView
            android:layout_width="match_parent"
            android:layout_height="match_parent"
-           android:src="@drawable/ic_8ballwindow"
+           app:srcCompat="@drawable/img_main_magicwindow"
            android:contentDescription="@null"/>
 
        <TextView
@@ -63,7 +63,7 @@
            android:fontFamily="@font/product_sans"
            android:gravity="center"
            android:text="@string/shake"
-           android:textColor="@color/azulito"
+           android:textColor="@color/azuuul"
            android:textSize="25sp" />
 
    </FrameLayout>
